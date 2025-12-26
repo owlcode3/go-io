@@ -31,7 +31,7 @@ func main() {
 		panic(err)
 	}
 	defer os.Remove(file.Name())
-	writeData(file, "&os.File{}")
+	writeData(file, "*os.File")
 	fileBytes := make([]byte, 4096)
 	file.Seek(0, io.SeekStart)
 	io.ReadFull(file, fileBytes)
