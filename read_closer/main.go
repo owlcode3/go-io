@@ -41,7 +41,7 @@ func main() {
 	fmt.Println(string(fileContent))
 	fmt.Println("----------------------------------")
 
-	// ReadCloser 3 - gzip.NewWriter() and gzip.NewReader
+	// ReadCloser 3 - gzip.NewWriter() and gzip.NewReader()
 	file.Truncate(0)
 	file.Seek(0, io.SeekStart)
 
