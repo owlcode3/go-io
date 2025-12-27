@@ -26,7 +26,7 @@ func writeAndReadData(rws io.ReadWriteSeeker) {
 }
 
 func main() {
-	// ReadWriter 1 - file
+	// ReadWriteSeeker 1 - file
 	file, err := os.Create("test.txt")
 	if err != nil {
 		log.Fatal(err)
